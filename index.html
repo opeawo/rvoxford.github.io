@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Oxford RV Storage | Vehicle Storage for Atlanta Metro</title>
+  <meta name="description" content="Secure vehicle storage in Oxford, GA serving the Atlanta Metro area. RVs, boats, cars, trailers, and work trucks. Gated access, covered and outdoor options." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://www.oxfordrvstorage.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Oxford RV Storage | Vehicle Storage for Atlanta Metro" />
+  <meta property="og:description" content="Secure vehicle storage in Oxford, GA serving the Atlanta Metro area. RVs, boats, cars, trailers, and work trucks." />
+  <meta property="og:url" content="https://www.oxfordrvstorage.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-cream: #F7F5F0;
+      --color-forest: #1B3D2F;
+      --color-forest-light: #2D5A47;
+      --color-rust: #C45D3A;
+      --color-rust-light: #E07B5A;
+      --color-sand: #D4C9B8;
+      --color-charcoal: #2C2C2C;
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-cream);
+      color: var(--color-charcoal);
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(165deg, var(--color-forest) 0%, var(--color-forest-light) 50%, var(--color-forest) 100%);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(ellipse 80% 50% at 20% 40%, rgba(196, 93, 58, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 80% 60%, rgba(212, 201, 184, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-nav {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-cream);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: var(--color-sand);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-cream);
+    }
+
+    .hero-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      z-index: 5;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-rust-light);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      color: var(--color-cream);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      max-width: 800px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--color-sand);
+      max-width: 600px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--color-rust);
+      color: var(--color-cream);
+    }
+
+    .btn-primary:hover {
+      background: var(--color-rust-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-cream);
+      border: 2px solid var(--color-sand);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(247, 245, 240, 0.1);
+      border-color: var(--color-cream);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(212, 201, 184, 0.2);
+    }
+
+    .stat {
+      text-align: left;
+    }
+
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-cream);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      color: var(--color-sand);
+      margin-top: 0.5rem;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 6rem 2rem;
+      background: var(--color-cream);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-eyebrow {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-rust);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--color-forest);
+      line-height: 1.2;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 20px rgba(27, 61, 47, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(27, 61, 47, 0.1);
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--color-forest);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: var(--color-cream);
+      font-size: 1.5rem;
+    }
+
+    .feature-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-forest);
+      margin-bottom: 0.75rem;
+    }
+
+    .feature-text {
+      color: #5a5a5a;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* Vehicle Types */
+    .vehicles {
+      padding: 6rem 2rem;
+      background: var(--color-forest);
+      position: relative;
+    }
+
+    .vehicles::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(ellipse 100% 60% at 50% 100%, rgba(196, 93, 58, 0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .vehicles .section-eyebrow {
+      color: var(--color-rust-light);
+    }
+
+    .vehicles .section-title {
+      color: var(--color-cream);
+    }
+
+    .vehicles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      position: relative;
+      z-index: 5;
+    }
+
+    .vehicle-item {
+      background: rgba(247, 245, 240, 0.05);
+      border: 1px solid rgba(212, 201, 184, 0.15);
+      padding: 2rem 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .vehicle-item:hover {
+      background: rgba(247, 245, 240, 0.1);
+      border-color: rgba(212, 201, 184, 0.3);
+    }
+
+    .vehicle-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .vehicle-name {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--color-cream);
+    }
+
+    /* Location Section */
+    .location {
+      padding: 6rem 2rem;
+      background: var(--color-cream);
+    }
+
+    .location-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .location-text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--color-forest);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .location-text p {
+      color: #5a5a5a;
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .location-highlights {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .highlight {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--color-forest);
+      font-weight: 500;
+    }
+
+    .highlight-icon {
+      width: 24px;
+      height: 24px;
+      background: var(--color-rust);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.75rem;
+    }
+
+    .location-map {
+      background: var(--color-sand);
+      border-radius: 12px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-placeholder {
+      text-align: center;
+      color: var(--color-forest);
+    }
+
+    .map-placeholder-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .map-placeholder-text {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .map-placeholder-sub {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-top: 0.25rem;
+    }
+
+    /* Blog CTA */
+    .blog-cta {
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, #f0ebe3 0%, var(--color-cream) 100%);
+    }
+
+    .blog-cta-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .blog-cta h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--color-forest);
+      margin-bottom: 1rem;
+    }
+
+    .blog-cta p {
+      color: #5a5a5a;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .blog-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--color-forest);
+      color: var(--color-cream);
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .blog-link:hover {
+      background: var(--color-forest-light);
+      transform: translateY(-2px);
+    }
+
+    .blog-link svg {
+      transition: transform 0.2s ease;
+    }
+
+    .blog-link:hover svg {
+      transform: translateX(4px);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--color-charcoal);
+      color: var(--color-sand);
+      padding: 4rem 2rem 2rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .footer-brand h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      opacity: 0.8;
+    }
+
+    .footer-links h4 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-cream);
+      margin-bottom: 1rem;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: var(--color-sand);
+      text-decoration: none;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 3rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(212, 201, 184, 0.15);
+      text-align: center;
+      font-size: 0.875rem;
+      opacity: 0.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        gap: 1.5rem;
+      }
+
+      .hero-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .location-content {
+        grid-template-columns: 1fr;
+      }
+
+      .location-map {
+        height: 300px;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <nav class="hero-nav">
+      <a href="/" class="logo">Oxford RV Storage</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#vehicles">What We Store</a>
+        <a href="#location">Location</a>
+        <a href="/blog/">Blog</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Oxford, Georgia • I-20 Exit 93</p>
+      <h1 class="hero-title">Vehicle Storage for the Atlanta Metro</h1>
+      <p class="hero-subtitle">Secure, accessible storage for RVs, boats, cars, trailers, and work trucks. Serving the entire Atlanta Metro from our location on I-20 East.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get a Quote</a>
+        <a href="/blog/" class="btn btn-secondary">Read Our Guides</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number">40</div>
+          <div class="stat-label">Miles from Downtown Atlanta</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Gated Access</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">30%</div>
+          <div class="stat-label">Less Than In-Town Rates</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Why Oxford</p>
+        <h2 class="section-title">Storage that makes sense</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3 class="feature-title">Gated Security</h3>
+          <p class="feature-text">Individual access codes, perimeter fencing, lighting throughout, and camera coverage. Your vehicle is protected.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🛣️</div>
+          <h3 class="feature-title">I-20 Access</h3>
+          <p class="feature-text">Exit 93 puts you directly on I-20 for quick access throughout the Metro—east to Lake Oconee or west to Atlanta.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">☀️</div>
+          <h3 class="feature-title">Covered Options</h3>
+          <p class="feature-text">Protect your vehicle from Georgia's intense sun and summer hail with our covered storage spaces.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📐</div>
+          <h3 class="feature-title">Space to Maneuver</h3>
+          <p class="feature-text">Wide drive aisles and generous spaces. No 47-point turns to get your RV or boat in and out.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3 class="feature-title">Competitive Rates</h3>
+          <p class="feature-text">East-Metro pricing means significant savings over in-town Atlanta facilities—without sacrificing security or quality.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📅</div>
+          <h3 class="feature-title">Flexible Terms</h3>
+          <p class="feature-text">Month-to-month availability. No long-term contracts required. Store as long as you need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vehicles" id="vehicles">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Store</p>
+        <h2 class="section-title">From daily drivers to Class A motorhomes</h2>
+      </div>
+
+      <div class="vehicles-grid">
+        <div class="vehicle-item">
+          <div class="vehicle-icon">🚐</div>
+          <div class="vehicle-name">RVs & Motorhomes</div>
+        </div>
+        <div class="vehicle-item">
+          <div class="vehicle-icon">🚤</div>
+          <div class="vehicle-name">Boats</div>
+        </div>
+        <div class="vehicle-item">
+          <div class="vehicle-icon">🚗</div>
+          <div class="vehicle-name">Cars</div>
+        </div>
+        <div class="vehicle-item">
+          <div class="vehicle-icon">🏕️</div>
+          <div class="vehicle-name">Campers & Trailers</div>
+        </div>
+        <div class="vehicle-item">
+          <div class="vehicle-icon">🚚</div>
+          <div class="vehicle-name">Work Trucks</div>
+        </div>
+        <div class="vehicle-item">
+          <div class="vehicle-icon">🏎️</div>
+          <div class="vehicle-name">Classic & Luxury</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="location" id="location">
+    <div class="container">
+      <div class="location-content">
+        <div class="location-text">
+          <h2>Positioned for the Atlanta Metro</h2>
+          <p>Oxford sits along I-20 about 40 miles east of downtown Atlanta—far enough for competitive pricing, close enough for practical access. For east-side residents, we're just 25-35 minutes away.</p>
+          <p>If you boat at Lake Oconee, we're literally on your route. Pick up your boat in Oxford, continue east, and you're at the lake in 30 minutes.</p>
+          
+          <div class="location-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">✓</span>
+              <span>I-20 Exit 93—easy on, easy off</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">✓</span>
+              <span>45 minutes from downtown Atlanta</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">✓</span>
+              <span>30 minutes to Lake Oconee</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">✓</span>
+              <span>Newton County—lower crime rates</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-map">
+          <div class="map-placeholder">
+            <div class="map-placeholder-icon">📍</div>
+            <div class="map-placeholder-text">Oxford, Georgia</div>
+            <div class="map-placeholder-sub">I-20 Exit 93 • Newton County</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-cta">
+    <div class="blog-cta-content">
+      <h2>Learn About Vehicle Storage</h2>
+      <p>Our blog covers everything from RV winterization to choosing the right storage type for your vehicle. 100 guides written for Atlanta Metro drivers.</p>
+      <a href="/blog/" class="blog-link">
+        Browse All Guides
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>Oxford RV Storage</h3>
+        <p>Secure vehicle storage serving the Atlanta Metro from Oxford, Georgia. RVs, boats, cars, trailers, and work trucks—stored safely at competitive rates.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Storage</h4>
+        <ul>
+          <li><a href="/blog/best-rv-storage-facilities-in-the-atlanta-metro.html">RV Storage</a></li>
+          <li><a href="/blog/best-boat-storage-options-near-atlanta-metro-lakes.html">Boat Storage</a></li>
+          <li><a href="/blog/best-car-storage-options-in-atlanta-metro-for-long-term-parking.html">Car Storage</a></li>
+          <li><a href="/blog/secure-storage-for-trailers-and-flatbeds-near-atlanta.html">Trailer Storage</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/blog/">All Guides</a></li>
+          <li><a href="/feed.xml">RSS Feed</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Oxford RV Storage. Oxford, Georgia.</p>
+    </div>
+  </footer>
+</body>
+</html>
